@@ -1,0 +1,457 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPaDRgnFjICam+l9hKv/FV8",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/g-rakshitha-14/pythom-programs/blob/main/Excercise2.ipy\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 16,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SrRL86XU5UfK",
+        "outputId": "5a62cb09-72ae-4672-afd2-f6899868e190"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2\n",
+            "3\n",
+            "4\n",
+            "4 is maximum\n"
+          ]
+        }
+      ],
+      "source": [
+        "#1 program that finds maximum among threee numbers\n",
+        "a=int(input())\n",
+        "b=int(input())\n",
+        "c=int(input())\n",
+        "if (a>b and a>c):\n",
+        " print (f\"{a} is maximum\")\n",
+        "elif (b>a and b>c):\n",
+        " print (f\"{b} is maximum\")\n",
+        "else:\n",
+        " print (f\"{c} is maximum\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#check given year is leap year or not\n",
+        "a=int(input(\"enter any year:\"))\n",
+        "if((a%4==0 and a%100!=0) or a%100==0):\n",
+        " print(\"given year is leap year \")\n",
+        "else:\n",
+        " print(\"givenn year is not leap year\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tXrUAAPy5fZI",
+        "outputId": "52297d86-90d6-4aaf-dd83-7e39fd85a9e1"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter any year:2016\n",
+            "given year is leap year \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#example for match case\n",
+        "day=int(input(\"enter the first number: \"))\n",
+        "match day:\n",
+        "  case 1:\n",
+        "    print(\"sunday\")\n",
+        "  case 2:\n",
+        "    print(\"monday\")\n",
+        "  case 3:\n",
+        "    print(\"tuesday\")\n",
+        "  case 4:\n",
+        "    print(\"wednesday\")\n",
+        "  case 5:\n",
+        "    print(\"thursday\")\n",
+        "  case 6:\n",
+        "    print(\"friday\")\n",
+        "  case 7:\n",
+        "    print(\"saturday\")\n",
+        ""
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "hpD2GV4U9-dP",
+        "outputId": "3d717236-57ca-44a4-83b7-213cb42b631e"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter the first number: 5\n",
+            "thursday\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#program to add and multiply complex numbers\n",
+        "a=complex(input())\n",
+        "b=complex(input())\n",
+        "print(a+b)\n",
+        "print(a*b)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JcwVF1yh_WPW",
+        "outputId": "3b0e2110-32cb-48c2-80fa-f0d0d0f6b4c2"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2+4j\n",
+            "3+2j\n",
+            "(5+6j)\n",
+            "(-2+16j)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#program to swap 2 variables without using temporary variable\n",
+        "a=int(input())\n",
+        "b=int(input())\n",
+        "print(a,b)\n",
+        "a,b=b,a\n",
+        "print(a,b)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "hxm0qpLmAjrf",
+        "outputId": "0d3c5267-6d1e-4295-a4f9-632b5518cc6b"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2\n",
+            "3\n",
+            "2 3\n",
+            "3 2\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#while loop\n",
+        "i=1\n",
+        "while(i <= 10):\n",
+        " print(i,end=\" \")\n",
+        " i=i+1"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "35mc-67PBbRG",
+        "outputId": "8b4a0edd-b375-4b63-e9aa-116ee5af33a5"
+      },
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1 2 3 4 5 6 7 8 9 10 "
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# program to print n to 1\n",
+        "n=int(input(\"enter any number: \"))\n",
+        "while(n>=1):\n",
+        "  print(n)\n",
+        "  n=n-1"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dRyGeqRkE1PF",
+        "outputId": "7d5095fd-aacd-4a8e-8982-cc5ea939141d"
+      },
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter any number: 5\n",
+            "5\n",
+            "4\n",
+            "3\n",
+            "2\n",
+            "1\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#for loop in python\n",
+        "n=int(input())\n",
+        "i=n\n",
+        "for i in range(1,n):\n",
+        " print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4Yhh_DDnJaq6",
+        "outputId": "27f3895e-d4cf-4afd-e77e-e9e0a53bcd60"
+      },
+      "execution_count": 37,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10\n",
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "6\n",
+            "7\n",
+            "8\n",
+            "9\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#program that prints a table upto 10 multiple\n",
+        "n=int(input())\n",
+        "for i in range(1,11):\n",
+        " print(f\"{n} * {i} = {n*i}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "m9D_DMpLKnca",
+        "outputId": "1405d303-a7c6-4dd3-f07d-dd8f55890564"
+      },
+      "execution_count": 41,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2\n",
+            "2 * 1 = 2\n",
+            "2 * 2 = 4\n",
+            "2 * 3 = 6\n",
+            "2 * 4 = 8\n",
+            "2 * 5 = 10\n",
+            "2 * 6 = 12\n",
+            "2 * 7 = 14\n",
+            "2 * 8 = 16\n",
+            "2 * 9 = 18\n",
+            "2 * 10 = 20\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#program that finds sum of the digits of a given number\n",
+        "n=int(input(\"enter any number\"))\n",
+        "sum=0\n",
+        "while(n!=0):\n",
+        "  rem=n%10\n",
+        "  sum=sum+rem\n",
+        "  n=n//10\n",
+        "print(sum)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3sV5G2uCQZnY",
+        "outputId": "90740b49-a8ff-4a2c-af0b-29f73d5f30eb"
+      },
+      "execution_count": 45,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter any number345\n",
+            "12\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#program that finds reverse of a given number\n",
+        "n=int(input(\"enter any number\"))\n",
+        "sum=0\n",
+        "while(n!=0):\n",
+        "  rem=n%10\n",
+        "  sum=sum * 10 +rem\n",
+        "  n=n//10\n",
+        "print(sum)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "a412e37d-f8fc-4f67-95bf-3ae1ac41575f",
+        "id": "ZlkAHQb5UAL3"
+      },
+      "execution_count": 46,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter any number23\n",
+            "32\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        " #program that checks given numver is prime number or not\n",
+        "n=int(input())\n",
+        "for i in range(2,n):\n",
+        "\n",
+        "  if(n%i==0):\n",
+        "   print(\"not a prime\")\n",
+        "   break\n",
+        "else:\n",
+        "  print(\"yes it is prime\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Xe-KpMG_UKs9",
+        "outputId": "eeb2b865-495f-4867-d2ab-33eaf12c4388"
+      },
+      "execution_count": 57,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5\n",
+            "yes it is prime\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#program that prints the prime numbers in given range\n",
+        "a=int(input())\n",
+        "b=int(input())\n",
+        "for i in range(a,b+1):\n",
+        " for j in range(2,i):\n",
+        "  if(i%j==0):\n",
+        "    break\n",
+        " else:\n",
+        "  print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "PsvxxRkRaTc2",
+        "outputId": "459ec170-dfc1-43af-9184-25cc6af3aaaa"
+      },
+      "execution_count": 58,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2\n",
+            "7\n",
+            "2\n",
+            "3\n",
+            "5\n",
+            "7\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
